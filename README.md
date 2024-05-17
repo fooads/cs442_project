@@ -1,4 +1,6 @@
-[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/vladmandic)
+Hello everyone
+
+<!-- [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/vladmandic)
 ![Git Version](https://img.shields.io/github/package-json/v/vladmandic/human?style=flat-square&svg=true&label=git)
 ![NPM Version](https://img.shields.io/npm/v/@vladmandic/human.png?style=flat-square)
 ![Last Commit](https://img.shields.io/github/last-commit/vladmandic/human?style=flat-square&svg=true)
@@ -8,21 +10,21 @@
 
 # Human Library
 
-**AI-powered 3D Face Detection & Rotation Tracking, Face Description & Recognition,**  
-**Body Pose Tracking, 3D Hand & Finger Tracking, Iris Analysis,**  
-**Age & Gender & Emotion Prediction, Gaze Tracking, Gesture Recognition, Body Segmentation**  
+**AI-powered 3D Face Detection & Rotation Tracking, Face Description & Recognition,**
+**Body Pose Tracking, 3D Hand & Finger Tracking, Iris Analysis,**
+**Age & Gender & Emotion Prediction, Gaze Tracking, Gesture Recognition, Body Segmentation**
 
 <br>
 
 ## Highlights
 
-- Compatible with most server-side and client-side environments and frameworks  
-- Combines multiple machine learning models which can be switched on-demand depending on the use-case  
-- Related models are executed in an attention pipeline to provide details when needed  
-- Optimized input pre-processing that can enhance image quality of any type of inputs  
-- Detection of frame changes to trigger only required models for improved performance  
-- Intelligent temporal interpolation to provide smooth results regardless of processing performance  
-- Simple unified API  
+- Compatible with most server-side and client-side environments and frameworks
+- Combines multiple machine learning models which can be switched on-demand depending on the use-case
+- Related models are executed in an attention pipeline to provide details when needed
+- Optimized input pre-processing that can enhance image quality of any type of inputs
+- Detection of frame changes to trigger only required models for improved performance
+- Intelligent temporal interpolation to provide smooth results regardless of processing performance
+- Simple unified API
 - Built-in Image, Video and WebCam handling
 
 [*Jump to Quick Start*](#quick-start)
@@ -31,15 +33,15 @@
 
 ## Compatibility
 
-- **Browser**:  
-  Compatible with both desktop and mobile platforms  
-  Compatible with *CPU*, *WebGL*, *WASM* backends  
-  Compatible with *WebWorker* execution  
-  Compatible with *WebView*  
-- **NodeJS**:  
-  Compatibile with *WASM* backend for executions on architectures where *tensorflow* binaries are not available  
-  Compatible with *tfjs-node* using software execution via *tensorflow* shared libraries  
-  Compatible with *tfjs-node* using GPU-accelerated execution via *tensorflow* shared libraries and nVidia CUDA  
+- **Browser**:
+  Compatible with both desktop and mobile platforms
+  Compatible with *CPU*, *WebGL*, *WASM* backends
+  Compatible with *WebWorker* execution
+  Compatible with *WebView*
+- **NodeJS**:
+  Compatibile with *WASM* backend for executions on architectures where *tensorflow* binaries are not available
+  Compatible with *tfjs-node* using software execution via *tensorflow* shared libraries
+  Compatible with *tfjs-node* using GPU-accelerated execution via *tensorflow* shared libraries and nVidia CUDA
 
 <br>
 
@@ -48,12 +50,12 @@
 - [NPM Link](https://www.npmjs.com/package/@vladmandic/human)
 ## Demos
 
-*Check out [**Simple Live Demo**](https://vladmandic.github.io/human/demo/typescript/index.html) fully annotated app as a good start starting point ([html](https://github.com/vladmandic/human/blob/main/demo/typescript/index.html))([code](https://github.com/vladmandic/human/blob/main/demo/typescript/index.ts))*  
+*Check out [**Simple Live Demo**](https://vladmandic.github.io/human/demo/typescript/index.html) fully annotated app as a good start starting point ([html](https://github.com/vladmandic/human/blob/main/demo/typescript/index.html))([code](https://github.com/vladmandic/human/blob/main/demo/typescript/index.ts))*
 
-*Check out [**Main Live Demo**](https://vladmandic.github.io/human/demo/index.html) app for advanced processing of of webcam, video stream or images static images with all possible tunable options*  
+*Check out [**Main Live Demo**](https://vladmandic.github.io/human/demo/index.html) app for advanced processing of of webcam, video stream or images static images with all possible tunable options*
 
-- To start video detection, simply press *Play*  
-- To process images, simply drag & drop in your Browser window  
+- To start video detection, simply press *Play*
+- To process images, simply drag & drop in your Browser window
 - Note: For optimal performance, select only models you'd like to use
 - Note: If you have modern GPU, *WebGL* (default) backend is preferred, otherwise select *WASM* backend
 
@@ -73,27 +75,27 @@
 - **Face Detect** [[*Live*]](https://vladmandic.github.io/human/demo/facedetect/index.html) [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/facedetect): Extract faces from images and processes details
 - **Face Match** [[*Live*]](https://vladmandic.github.io/human/demo/facematch/index.html) [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/facematch): Extract faces from images, calculates face descriptors and similarities and matches them to known database
 - **Face ID** [[*Live*]](https://vladmandic.github.io/human/demo/faceid/index.html) [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/faceid): Runs multiple checks to validate webcam input before performing face match to faces in IndexDB
-- **Multi-thread** [[*Live*]](https://vladmandic.github.io/human/demo/multithread/index.html) [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/multithread): Runs each Human module in a separate web worker for highest possible performance  
+- **Multi-thread** [[*Live*]](https://vladmandic.github.io/human/demo/multithread/index.html) [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/multithread): Runs each Human module in a separate web worker for highest possible performance
 - **NextJS** [[*Live*]](https://vladmandic.github.io/human-next/out/index.html) [[*Details*]](https://github.com/vladmandic/human-next): Use Human with TypeScript, NextJS and ReactJS
 - **ElectronJS** [[*Details*]](https://github.com/vladmandic/human-electron): Use Human with TypeScript and ElectonJS to create standalone cross-platform apps
 - **3D Analysis with BabylonJS** [[*Live*]](https://vladmandic.github.io/human-motion/src/index.html) [[*Details*]](https://github.com/vladmandic/human-motion): 3D tracking and visualization of heead, face, eye, body and hand
-- **VRM Virtual Model Tracking with Three.JS** [[*Live*]](https://vladmandic.github.io/human-three-vrm/src/human-vrm.html) [[*Details*]](https://github.com/vladmandic/human-three-vrm): VR model with head, face, eye, body and hand tracking  
-- **VRM Virtual Model Tracking with BabylonJS** [[*Live*]](https://vladmandic.github.io/human-bjs-vrm/src/index.html) [[*Details*]](https://github.com/vladmandic/human-bjs-vrm): VR model with head, face, eye, body and hand tracking  
+- **VRM Virtual Model Tracking with Three.JS** [[*Live*]](https://vladmandic.github.io/human-three-vrm/src/human-vrm.html) [[*Details*]](https://github.com/vladmandic/human-three-vrm): VR model with head, face, eye, body and hand tracking
+- **VRM Virtual Model Tracking with BabylonJS** [[*Live*]](https://vladmandic.github.io/human-bjs-vrm/src/index.html) [[*Details*]](https://github.com/vladmandic/human-bjs-vrm): VR model with head, face, eye, body and hand tracking
 
 ### NodeJS Demos
 
-*NodeJS demos may require extra dependencies which are used to decode inputs*  
+*NodeJS demos may require extra dependencies which are used to decode inputs*
 *See header of each demo to see its dependencies as they are not automatically installed with `Human`*
 
-- **Main** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs/node.js): Process images from files, folders or URLs using native methods  
-- **Canvas** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs/node-canvas.js): Process image from file or URL and draw results to a new image file using `node-canvas`  
-- **Video** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs/node-video.js): Processing of video input using `ffmpeg`  
-- **WebCam** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs/node-webcam.js): Processing of webcam screenshots using `fswebcam`  
+- **Main** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs/node.js): Process images from files, folders or URLs using native methods
+- **Canvas** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs/node-canvas.js): Process image from file or URL and draw results to a new image file using `node-canvas`
+- **Video** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs/node-video.js): Processing of video input using `ffmpeg`
+- **WebCam** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs/node-webcam.js): Processing of webcam screenshots using `fswebcam`
 - **Events** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs/node-event.js): Showcases usage of `Human` eventing to get notifications on processing
 - **Similarity** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs/node-similarity.js): Compares two input images for similarity of detected faces
 - **Face Match** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/facematch/node-match.js): Parallel processing of face **match** in multiple child worker threads
-- **Multiple Workers** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/multithread/node-multiprocess.js): Runs multiple parallel `human` by dispaching them to pool of pre-created worker processes  
-- **Dynamic Load** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs): Loads Human dynamically with multiple different desired backends  
+- **Multiple Workers** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/multithread/node-multiprocess.js): Runs multiple parallel `human` by dispaching them to pool of pre-created worker processes
+- **Dynamic Load** [[*Details*]](https://github.com/vladmandic/human/tree/main/demo/nodejs): Loads Human dynamically with multiple different desired backends
 
 ## Project pages
 
@@ -138,28 +140,28 @@
 
 <br>
 
-*See [**issues**](https://github.com/vladmandic/human/issues?q=) and [**discussions**](https://github.com/vladmandic/human/discussions) for list of known limitations and planned enhancements*  
+*See [**issues**](https://github.com/vladmandic/human/issues?q=) and [**discussions**](https://github.com/vladmandic/human/discussions) for list of known limitations and planned enhancements*
 
-*Suggestions are welcome!*  
+*Suggestions are welcome!*
 
 <hr><br>
 
 ## App Examples
 
-Visit [Examples gallery](https://vladmandic.github.io/human/samples/index.html) for more examples  
+Visit [Examples gallery](https://vladmandic.github.io/human/samples/index.html) for more examples
 [<img src="assets/samples.jpg" width="640"/>](assets/samples.jpg)
 
 <br>
 
 ## Options
 
-All options as presented in the demo application...  
-[demo/index.html](demo/index.html)  
+All options as presented in the demo application...
+[demo/index.html](demo/index.html)
 [<img src="assets/screenshot-menu.png"/>](assets/screenshot-menu.png)
 
 <br>
 
-**Results Browser:**  
+**Results Browser:**
 [ *Demo -> Display -> Show Results* ]<br>
 [<img src="assets/screenshot-results.png"/>](assets/screenshot-results.png)
 
@@ -167,29 +169,29 @@ All options as presented in the demo application...
 
 ## Advanced Examples
 
-1. **Face Similarity Matching:**  
-Extracts all faces from provided input images,  
-sorts them by similarity to selected face  
+1. **Face Similarity Matching:**
+Extracts all faces from provided input images,
+sorts them by similarity to selected face
 and optionally matches detected face with database of known people to guess their names
-> [demo/facematch](demo/facematch/index.html)  
+> [demo/facematch](demo/facematch/index.html)
 
 [<img src="assets/screenshot-facematch.jpg" width="640"/>](assets/screenshot-facematch.jpg)
 
-2. **Face Detect:**  
-Extracts all detect faces from loaded images on-demand and highlights face details on a selected face  
-> [demo/facedetect](demo/facedetect/index.html)  
+2. **Face Detect:**
+Extracts all detect faces from loaded images on-demand and highlights face details on a selected face
+> [demo/facedetect](demo/facedetect/index.html)
 
 [<img src="assets/screenshot-facedetect.jpg" width="640"/>](assets/screenshot-facedetect.jpg)
 
-3. **Face ID:**  
+3. **Face ID:**
 Performs validation check on a webcam input to detect a real face and matches it to known faces stored in database
-> [demo/faceid](demo/faceid/index.html)  
+> [demo/faceid](demo/faceid/index.html)
 
 [<img src="assets/screenshot-faceid.jpg" width="640"/>](assets/screenshot-faceid.jpg)
 
 <br>
 
-4. **3D Rendering:**  
+4. **3D Rendering:**
 > [human-motion](https://github.com/vladmandic/human-motion)
 
 [<img src="https://github.com/vladmandic/human-motion/raw/main/assets/screenshot-face.jpg" width="640"/>](https://github.com/vladmandic/human-motion/raw/main/assets/screenshot-face.jpg)
@@ -198,9 +200,9 @@ Performs validation check on a webcam input to detect a real face and matches it
 
 <br>
 
-5. **VR Model Tracking:**  
-> [human-three-vrm](https://github.com/vladmandic/human-three-vrm)  
-> [human-bjs-vrm](https://github.com/vladmandic/human-bjs-vrm)  
+5. **VR Model Tracking:**
+> [human-three-vrm](https://github.com/vladmandic/human-three-vrm)
+> [human-bjs-vrm](https://github.com/vladmandic/human-bjs-vrm)
 
 [<img src="https://github.com/vladmandic/human-three-vrm/raw/main/assets/human-vrm-screenshot.jpg" width="640"/>](https://github.com/vladmandic/human-three-vrm/raw/main/assets/human-vrm-screenshot.jpg)
 
@@ -210,8 +212,8 @@ Performs validation check on a webcam input to detect a real face and matches it
 
 <br>
 
-**468-Point Face Mesh Defails:**  
-(view in full resolution to see keypoints)  
+**468-Point Face Mesh Defails:**
+(view in full resolution to see keypoints)
 
 [<img src="assets/facemesh.png" width="400"/>](assets/facemesh.png)
 
@@ -219,7 +221,7 @@ Performs validation check on a webcam input to detect a real face and matches it
 
 ## Quick Start
 
-Simply load `Human` (*IIFE version*) directly from a cloud CDN in your HTML file:  
+Simply load `Human` (*IIFE version*) directly from a cloud CDN in your HTML file:
 (pick one: `jsdelirv`, `unpkg` or `cdnjs`)
 
 ```html
@@ -235,7 +237,7 @@ For details, including how to use `Browser ESM` version or `NodeJS` version of `
 
 ## Code Examples
 
-Simple app that uses Human to process video input and  
+Simple app that uses Human to process video input and
 draw output on screen using internal draw helper functions
 
 ```js
@@ -372,19 +374,19 @@ And for even better results, you can run detection in a separate web worker thre
 
 ## Inputs
 
-`Human` library can process all known input types:  
+`Human` library can process all known input types:
 
-- `Image`, `ImageData`, `ImageBitmap`, `Canvas`, `OffscreenCanvas`, `Tensor`,  
+- `Image`, `ImageData`, `ImageBitmap`, `Canvas`, `OffscreenCanvas`, `Tensor`,
 - `HTMLImageElement`, `HTMLCanvasElement`, `HTMLVideoElement`, `HTMLMediaElement`
 
 Additionally, `HTMLVideoElement`, `HTMLMediaElement` can be a standard `<video>` tag that links to:
 
 - WebCam on user's system
-- Any supported video type  
+- Any supported video type
   e.g. `.mp4`, `.avi`, etc.
-- Additional video types supported via *HTML5 Media Source Extensions*  
+- Additional video types supported via *HTML5 Media Source Extensions*
   e.g.: **HLS** (*HTTP Live Streaming*) using `hls.js` or **DASH** (*Dynamic Adaptive Streaming over HTTP*) using `dash.js`
-- **WebRTC** media track using built-in support  
+- **WebRTC** media track using built-in support
 
 <br><hr><br>
 
@@ -401,15 +403,15 @@ Additionally, `HTMLVideoElement`, `HTMLMediaElement` can be a standard `<video>`
 
 ## TypeDefs
 
-`Human` is written using TypeScript strong typing and ships with full **TypeDefs** for all classes defined by the library bundled in `types/human.d.ts` and enabled by default  
+`Human` is written using TypeScript strong typing and ships with full **TypeDefs** for all classes defined by the library bundled in `types/human.d.ts` and enabled by default
 
-*Note*: This does not include embedded `tfjs`  
+*Note*: This does not include embedded `tfjs`
 If you want to use embedded `tfjs` inside `Human` (`human.tf` namespace) and still full **typedefs**, add this code:
 
-> import type * as tfjs from '@vladmandic/human/dist/tfjs.esm';  
+> import type * as tfjs from '@vladmandic/human/dist/tfjs.esm';
 > const tf = human.tf as typeof tfjs;
 
-This is not enabled by default as `Human` does not ship with full **TFJS TypeDefs** due to size considerations  
+This is not enabled by default as `Human` does not ship with full **TFJS TypeDefs** due to size considerations
 Enabling `tfjs` TypeDefs as above creates additional project (dev-only as only types are required) dependencies as defined in `@vladmandic/human/dist/tfjs.esm.d.ts`:
 
 > @tensorflow/tfjs-core, @tensorflow/tfjs-converter, @tensorflow/tfjs-backend-wasm, @tensorflow/tfjs-backend-webgl
@@ -431,8 +433,8 @@ Default models in Human library are:
 - **Body Segmentation**: *Google Selfie*
 - **Object Detection**: *CenterNet with MobileNet v3*
 
-Note that alternative models are provided and can be enabled via configuration  
-For example, body pose detection by default uses *MoveNet Lightning*, but can be switched to *MultiNet Thunder* for higher precision or *Multinet MultiPose* for multi-person detection or even *PoseNet*, *BlazePose* or *EfficientPose* depending on the use case  
+Note that alternative models are provided and can be enabled via configuration
+For example, body pose detection by default uses *MoveNet Lightning*, but can be switched to *MultiNet Thunder* for higher precision or *Multinet MultiPose* for multi-person detection or even *PoseNet*, *BlazePose* or *EfficientPose* depending on the use case
 
 For more info, see [**Configuration Details**](https://github.com/vladmandic/human/wiki/Configuration) and [**List of Models**](https://github.com/vladmandic/human/wiki/Models)
 
@@ -444,13 +446,13 @@ For more info, see [**Configuration Details**](https://github.com/vladmandic/hum
 
 <br><hr><br>
 
-`Human` library is written in [TypeScript](https://www.typescriptlang.org/docs/handbook/intro.html) **5.1** using [TensorFlow/JS](https://www.tensorflow.org/js/) **4.10** and conforming to latest `JavaScript` [ECMAScript version 2022](https://262.ecma-international.org/) standard  
+`Human` library is written in [TypeScript](https://www.typescriptlang.org/docs/handbook/intro.html) **5.1** using [TensorFlow/JS](https://www.tensorflow.org/js/) **4.10** and conforming to latest `JavaScript` [ECMAScript version 2022](https://262.ecma-international.org/) standard
 
-Build target for distributables is `JavaScript` [EMCAScript version 2018](https://262.ecma-international.org/9.0/)  
+Build target for distributables is `JavaScript` [EMCAScript version 2018](https://262.ecma-international.org/9.0/)
 
 <br>
 
-For details see [**Wiki Pages**](https://github.com/vladmandic/human/wiki)  
+For details see [**Wiki Pages**](https://github.com/vladmandic/human/wiki)
 and [**API Specification**](https://vladmandic.github.io/human/typedoc/classes/Human.html)
 
 <br>
@@ -462,4 +464,4 @@ and [**API Specification**](https://vladmandic.github.io/human/typedoc/classes/H
 ![CDN](https://data.jsdelivr.com/v1/package/npm/@vladmandic/human/badge)<br>
 ![Downloads](https://img.shields.io/npm/dw/@vladmandic/human.png?style=flat-square)
 ![Downloads](https://img.shields.io/npm/dm/@vladmandic/human.png?style=flat-square)
-![Downloads](https://img.shields.io/npm/dy/@vladmandic/human.png?style=flat-square)
+![Downloads](https://img.shields.io/npm/dy/@vladmandic/human.png?style=flat-square) -->
