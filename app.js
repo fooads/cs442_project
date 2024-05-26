@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const config = { backend: 'webgl', modelBasePath: 'https://cdn.jsdelivr.net/npm/@vladmandic/human/models' };
     const human = new Human.Human(config);
+    const degreeConversionRate = 57.2958;
+    const beepAudio =  new Audio("../beepSound.mp3")
 
     await human.load(); // Load the models
     console.log("Human models loaded");
@@ -73,9 +75,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             console.log("Median Rotation Data:", medianRotation);
             console.log("Median Distance Data:", medianDistance);
+            
+            const pitchValue = Math.abs(parseFloat((medianRotation.pitch * degreeConversionRate).toFixed(2)));
+            const yawValue = Math.abs(parseFloat((medianRotation.yaw * degreeConversionRate).toFixed(2)));
+            const rollValue = Math.abs(parseFloat((medianRotation.roll * degreeConversionRate).toFixed(2)));
 
-            dataElement.textContent = `Median Rotation: ${JSON.stringify(medianRotation)}`;
+            dataElement.textContent = `Median Rotation: ${JSON.stringify({pitchValue, yawValue, rollValue})}`;
             distanceElement.textContent = `Median Distance: ${medianDistance}`;
+
+            for (let i =0; i < 3; i++) { 
+                if({0: pitchValue, 1: yawValue, 2: rollValue}[i] > 40) beepAudio.play();
+            }
+
+            //beepAudio.play();
 
             // Pause for 5 seconds before starting the next recording
             setTimeout(startRecording, pauseDuration);
